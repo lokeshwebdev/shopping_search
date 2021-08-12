@@ -1,0 +1,69 @@
+
+<div class="container">
+
+
+     <div class="row"> <div id="search_box">       
+  
+  
+          <p  id="search_box_head">Search Your Product</p>
+          <p>  <input type="text" name="" class="form-control" #serachValue (keyup)="searchproduct(serachValue)" > </p>
+         
+          </div></div>
+          <div class="row">
+            
+              <div class="col-md-12"> <p-selectButton class="text-center" [options]="stateOptions"  [(ngModel)]="value1" optionLabel="label" optionValue="value" (onChange)="openMode()"></p-selectButton></div>
+
+             <!-- <div class="col-md-6"> <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a Category" optionLabel="name" [showClear]="true" (onChange)="searchcategory({{cities}})"></p-dropdown>
+              
+              </div>-->
+              
+              </div> 
+          
+      
+       
+          <h1 class="text-center p-4 notfornd" >{{notFound}}</h1>
+          <div class="row" >
+        <div class="col-sm-3" *ngFor="let product of allProductList; index as i">
+        <div class="card text-center">
+        <div class='box-shadow'>
+          <img class='card-img-top ' src="{{product.image}}" alt='{{product.image}}'  ><div class='card-body' >
+            <h5 class='card-title'>{{product.name}}</h5><p class='card-text'> </p>
+            
+            <p class='card-text'>Price : ${{product.price}}</p> 
+           
+  
+         <input type="hidden" #id value="{{product.id}}">            
+           
+           <p-button  (click)="productPopupModal(id)"routerLink ="{{rlink? '/product-detail/'+product.id : '#' }}" label="View"  ></p-button>
+           </div></div></div></div>
+          
+         
+         
+        
+       
+      </div>
+    </div>
+    
+    <p-dialog header="{{singleProductTitle}}" [(visible)]="displayProductModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+    [draggable]="false" [resizable]="false">
+    <div class="row">
+    <div class="col-md-5">
+    <p class="p-m-0"><img src="{{singleProductImg}}" width="100%"></p></div>
+    <div class="col-md-7">
+      
+      <p class="p-m-0"><b>Price:</b> ${{singleProductPrice}}</p>
+      <p class="p-m-0"><b>Category:</b> {{singleProductCategory}}</p>
+    <p class="p-m-0"><b>Quantity:</b>  {{singleProductQuantity}}</p>
+    <p class="p-m-0"><b>Status:</b> {{singleProductInventoryStatus}}</p>
+    
+        <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="displayProductModal=false" label="Ok" styleClass="p-button-text"></p-button>
+        </ng-template>
+      </div>
+      <div class="col-md-12">
+      <p class="p-m-0 mt-4"><b>Description:</b> {{singleProductDes}}</p> </div></div>
+</p-dialog>
+
+
+  
+
