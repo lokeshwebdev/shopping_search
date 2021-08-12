@@ -1,31 +1,92 @@
-
+<style>
+  .clear_cls{
+    color: #000;
+    /* position: absolute; */
+    /* margin-top: -20px; */
+    /* top: 87px; */
+    position: absolute;
+    display: block;
+    top: 7px;
+    right: 11px;
+    width: 16px;
+    height: 16px;
+    /* background: url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=4) 0 -690px; */
+    cursor: pointer;
+    font-size: 23px;}
+</style>
 <div class="container">
 
+  
 
      <div class="row"> <div id="search_box">       
   
   
           <p  id="search_box_head">Search Your Product</p>
-          <p>  <input type="text" name="" class="form-control" #serachValue (keyup)="searchproduct(serachValue)" > </p>
+          <p style="    position: relative;">   <input type="text" name="" class="form-control" #serachValue (keyup)="searchproduct(serachValue)"  ><i   *ngIf="showval" class="fas fa-times-circle color-black clear_cls" (click)="clearText(serachValue)"  ></i>
+            
+          </p>
          
           </div></div>
           <div class="row">
             
               <div class="col-md-12"> <p-selectButton class="text-center" [options]="stateOptions"  [(ngModel)]="value1" optionLabel="label" optionValue="value" (onChange)="openMode()"></p-selectButton></div>
+          <!---   <div class="col-md-4 text-center">
+              <div class="p-field-radiobutton">
 
-             <!-- <div class="col-md-6"> <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a Category" optionLabel="name" [showClear]="true" (onChange)="searchcategory({{cities}})"></p-dropdown>
+                <p-radioButton  (onClick)="setvisibility()" name="city" value="off" [(ngModel)]="openoption" inputId="city1"></p-radioButton>
+                <label for="city1" class="text-white" style="line-height: 9px;"> &nbsp;&nbsp; Open with new tab</label>
+            </div>
+            <div class="p-field-radiobutton">
+                <p-radioButton (onClick)="setvisibility()"  name="city" value="on" [(ngModel)]="openoption" inputId="city2"></p-radioButton>
+                <label for="city2" class="text-white" style="line-height: 9px;"> &nbsp;&nbsp; Opne with new popup</label>
+              </div> </div>
+
+              <div class="col-md-4">
+                
+                <p-dropdown [options]="cities" #iidd [(ngModel)]="selectedCity1" placeholder="Select a City" optionLabel="name" [showClear]="true" (onChange)="selectOpenOption(iidd)" ></p-dropdown></div>
+              -->
+<!-- <div class="col-md-6"> <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Select a Category" optionLabel="name" [showClear]="true" (onChange)="searchcategory({{cities}})"></p-dropdown>
               
+
+
               </div>-->
+
               
+
+
+
               </div> 
-          
-      
+              <p class="text-center  notfornd" >{{notFound}} <img src="{{loadingProduct}}"></p>
        
-          <h1 class="text-center p-4 notfornd" >{{notFound}}</h1>
+
+
+
+         
           <div class="row" >
+         
+
+                 
+            <div class="col-sm-3" *ngFor="let product of emptyProductList1; index as i">
+                 
+                 
+              <div class="card text-center">
+                <div class='box-shadow'>
+                 <div class='card-body' >
+
+                   <p-skeleton width="100%" height="150px" class="m-1" ></p-skeleton>
+                  
+                    <p-skeleton  width="100%"styleClass="p-mb-2" class="m-1">asxadsad</p-skeleton> 
+                   
+                   <p-skeleton  width="100%" styleClass="p-mb-2" class="m-1">sdfssdf</p-skeleton>  
+                    
+                   <p-skeleton  width="100%"height="2rem">asdadsadsad</p-skeleton>
+                                       
+                   </div></div></div> </div>
+
         <div class="col-sm-3" *ngFor="let product of allProductList; index as i">
         <div class="card text-center">
         <div class='box-shadow'>
+          
           <img class='card-img-top ' src="{{product.image}}" alt='{{product.image}}'  ><div class='card-body' >
             <h5 class='card-title'>{{product.name}}</h5><p class='card-text'> </p>
             
@@ -65,5 +126,7 @@
 </p-dialog>
 
 
-  
 
+
+
+ 

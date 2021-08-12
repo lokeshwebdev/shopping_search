@@ -1,0 +1,97 @@
+ 
+
+
+<div class="container">
+
+    <div class="card">
+        
+        <p-table [value]="customers" [paginator]="true" [rows]="rows" [showCurrentPageReport]="true" 
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
+            <ng-template pTemplate="header">
+                <tr>
+                <th pSortableColumn="id">Id <p-sortIcon field="id"></p-sortIcon></th>
+                <th pSortableColumn=" ">Image  </th>
+                <th pSortableColumn="title">Title <p-sortIcon field="title"></p-sortIcon></th>
+                <th pSortableColumn="price">price <p-sortIcon field="price"></p-sortIcon></th>
+                <th pSortableColumn="type">Type <p-sortIcon field="type"></p-sortIcon></th>
+                <th pSortableColumn="rating">Price <p-sortIcon field="rating"></p-sortIcon></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer>
+                <tr>
+                   
+                 
+                    <td>{{customer.id}}</td>
+                    <td>
+                    <img #imgval class="img_cls" src="{{customer.filename}}"  alt="{{customer.filename}}"  (click)="showModalDialog(imgval)"> 
+                        </td>            
+                    <td>{{customer.title}}</td>
+                    <td>$ {{customer.price}}</td>
+                    <td>{{customer.type}}</td>
+                    <td>{{customer.rating}}</td>
+                    
+                     
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="paginatorleft">
+                <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+            </ng-template>
+            <ng-template pTemplate="paginatorright">
+                <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+            </ng-template>
+        </p-table>
+    </div>
+
+    <p-dialog header=" " [(visible)]="displayModal" [modal]="true" [style]="{width: ''}" [maximizable]="true"[baseZIndex]="10000"
+    [draggable]="false" [resizable]="false">
+    <p class="p-m-0 text-center"><img src="{{productImg}}"> </p>
+        <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="displayModal=false" label="Ok" styleClass="p-button-text"></p-button>
+        </ng-template>
+</p-dialog>
+    
+ 
+
+<!--    <div class="row"> 
+
+<p-table [value]="products">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>image</th>
+            <th>price</th>
+            <th>Type</th>
+            <th>Rating</th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.id}}</td>
+            <td><img src="{{product.filename}}" width="80px"></td>            
+            <td>id{{product.title}}</td>
+            <td>$ {{product.price}}</td>
+            <td>{{product.type}}</td>
+            <td>{{product.rating}}</td>
+            
+            
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+        <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+        <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+    </ng-template>
+</p-table>
+
+</div></div>-->
+
+<!--<div *ngFor="let item of productList">
+    {{item.type}}
+</div>-->
+
+ 
+

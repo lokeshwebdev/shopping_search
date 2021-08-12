@@ -16,11 +16,15 @@ import {DialogModule} from 'primeng/dialog';
 import {ButtonModule} from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import {TableModule} from 'primeng/table';
 import {DropdownModule} from 'primeng/dropdown';
+import { InfoComponent } from './info/info.component';
+import {SkeletonModule} from 'primeng/skeleton';
+import { ServiceComponent } from './service/service.component';
+import {TreeTableModule} from 'primeng/treetable';
  
 
  
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +32,8 @@ import {DropdownModule} from 'primeng/dropdown';
     AboutComponent,
     HeaderComponent,
     ProductDetailComponent,
+    InfoComponent,
+    ServiceComponent,
     
   ],
   imports: [
@@ -41,7 +47,12 @@ import {DropdownModule} from 'primeng/dropdown';
     DialogModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    DropdownModule
+    DropdownModule,
+    TableModule,
+    SkeletonModule,
+    TreeTableModule,
+  
+    
     
  
  

@@ -1,0 +1,341 @@
+{
+    "data":
+    [  
+        {  
+            "data":{  
+                "name":"Breakfast",
+                "price":" ",
+                "availability":" "
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Poha",
+                        "price":"$ 20",
+                        "availability":"In Stock"
+                    }
+                    
+                },
+                {  
+                    "data":{  
+                        "name":"Oats chilla",
+                        "price":"$ 22",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Upma recipe (rava upma)",
+                        "price":"$ 19",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Palak paratha (Spinach paratha)",
+                        "price":"$ 10",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Methi paratha (methi roti)",
+                        "price":"$ 25",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Paniyaram ",
+                        "price":"$ 17",
+                        "availability":"Out of stock"
+                    }
+                }
+            ]
+        },
+        {  
+            "data":{  
+                "name":"Lunch",
+                "price":" ",
+                "availability":" "
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Dal paratha",
+                        "price":"$ 20",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Oats idli",
+                        "price":"$ 33",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Daal Roti Rice",
+                        "price":"$ 21",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Methi pulao recipe",
+                        "price":"$ 26",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":" Jeera rice ",
+                        "price":"$ 12",
+                        "availability":"In Stock "
+                    }
+                },{  
+                    "data":{  
+                        "name":"Veg Wraps",
+                        "price":"$ 15",
+                        "availability":"Out of stock"
+                    }
+                }
+            ]
+        },
+        
+        {  
+            "data": {  
+                "name":"Dinner",
+                "price":" ",
+                "availability":" "
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Biryani rice (Kuska rice)",
+                        "price":"$ 23",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Veg biryani recipe (vegetable biryani)",
+                        "price":"$ 21",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Akki roti (Rice flour roti)",
+                        "price":"$ 16",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Capsicum rice recipe",
+                        "price":"$ 13",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Lemon Chicken",
+                        "price":"$ 5",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Chettinad Fish Fry",
+                        "price":"$ 33",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Dum Aloo Lakhnawi",
+                        "price":"$ 22",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Dum Paneer Kali Mirch",
+                        "price":"$ 19",
+                        "availability":"Out of stock"
+                    }
+                }
+            ]
+        },
+       
+        {  
+            "data": {  
+                "name":"Fruits",
+                "price":" ",
+                "availability":" "
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Apples",
+                        "price":"$ 3",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Papaya",
+                        "price":"$ 2",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Bananas",
+                        "price":"$ 1",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Guava",
+                        "price":"$ 3",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Water Melons",
+                        "price":"$ 1",
+                        "availability":"Out of stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Oranges",
+                        "price":"$ 2",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Lichi",
+                        "price":"$ 3",
+                        "availability":"In Stock"
+                    }
+                }
+            ]
+        },
+        {  
+            "data": {  
+                "name":"Vegetables",
+                "price":" ",
+                "availability":" "
+            },
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Potato",
+                        "price":"$ 1",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Tomato",
+                        "price":"$ 2",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Capsicum",
+                        "price":"$ .5",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Cabbage",
+                        "price":"$ 3",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Broccoli",
+                        "price":"$ 5",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Carrot",
+                        "price":"$ 6",
+                        "availability":"Out of stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":" brinjal",
+                        "price":"$ 4",
+                        "availability":"In Stock"
+                    }
+                }
+            ]
+        },
+        {  
+            "data": {  
+                "name":"Drink",
+                "price":" ",
+                "availability":" "
+            }, 
+            "children":[  
+                {  
+                    "data":{  
+                        "name":"Wine",
+                        "price":"$ 2",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Coffee",
+                        "price":"$ 2",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Lemonade",
+                        "price":"$ 3",
+                        "availability":"In Stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Iced tea",
+                        "price":"$ 5",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Hot chocolate",
+                        "price":"$ 11",
+                        "availability":"Out of stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":"Juice",
+                        "price":"$ 10",
+                        "availability":"In Stock"
+                    }
+                }, {  
+                    "data":{  
+                        "name":" Milkshake",
+                        "price":"$ 22",
+                        "availability":"In Stock"
+                    }
+                }
+            ]
+        }
+         
+        
+    ]
+}

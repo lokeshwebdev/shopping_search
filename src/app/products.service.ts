@@ -50,6 +50,11 @@ export class ProductsService {
     return this.http.get('assets/productslist.json');
        
     }
+
+    getempytData() {
+      return this.http.get('assets/empty.json');
+         
+      }
     
     getData1()
     {

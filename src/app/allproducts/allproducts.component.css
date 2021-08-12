@@ -53,4 +53,8 @@ p {
 }
 .card {border: 0px; background-color: transparent;}
 
-.notfornd{color:#fff}
+.notfornd{color:#fff ;
+    font-size: 40px;
+}
+
+ 
