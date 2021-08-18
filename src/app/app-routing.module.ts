@@ -6,6 +6,8 @@ import {AboutComponent} from './about/about.component';
 import{ProductDetailComponent} from './product-detail/product-detail.component';
 import { InfoComponent } from './info/info.component';
 import { ServiceComponent } from './service/service.component';
+import { OurworkComponent } from './ourwork/ourwork.component';
+
 
 const routes: Routes = [
 
@@ -15,6 +17,7 @@ const routes: Routes = [
 {  path:'product-detail/:id', component:ProductDetailComponent},
 {  path:'info', component:InfoComponent},
 {  path:'service', component:ServiceComponent},
+{  path:'our-work', component:OurworkComponent},
 
 ];
 

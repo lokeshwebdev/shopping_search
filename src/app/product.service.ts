@@ -15,9 +15,21 @@ export class ProductService {
     }
 
     
+    gettestdata() {
+      return this.http.get('assets/product_data.json');
+         
+      }
+
+    
     getFilesystem() {
       return this.http.get<any>('assets/product_data.json')
         .toPromise()
         .then(res => <TreeNode[]>res.data);
       }
+
+      getFilesystem1() {
+        return this.http.get<any>('assets/test-treetable-data.json')
+          .toPromise()
+          .then(res => <TreeNode[]>res.data);
+        }
 }

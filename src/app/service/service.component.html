@@ -1,10 +1,27 @@
 
 <div class="container">
+    <div class="row p-5">
 
-  
+        
+     
+    <p-multiSelect [options]="groupedFood" [group]="true" [(ngModel)]="selectedFood" defaultLabel="Select Food Item" scrollHeight="250px" display="chip" (onChange)="addDataTable($event)" optionLabel="name"> 
+        <ng-template let-group pTemplate="group" >
+            <div class="p-d-flex p-ai-center">
+              <!-- <img src="assets/showcase/images/demo/flag/flag_placeholder.png" [class]="'p-mr-2 flag flag-' + group.value" style="width: 20px"/>
+               -->  <span>{{group.name}}</span>
+            </div>
+        </ng-template>
+    </p-multiSelect>
+
+</div>
+ 
+
+<br>
+
+ 
 
     <div class="row">
-<p-treeTable [value]="files1" [columns]="cols" [paginator]="true" [rows]="5">  
+<p-treeTable [value]="foodData" [columns]="cols" [paginator]="true" selectionMode="checkbox"  [rows]="5">  
     <ng-template pTemplate="header" let-columns>
         <tr>
             <th *ngFor="let col of columns" [ttSortableColumn]="col.field">
@@ -17,8 +34,7 @@
         <tr [ttRow]="rowNode">
             <td>
                 <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
-                {{rowData.name}}
-            </td>
+                {{rowData.name}}            </td>
             <td>{{rowData.price}}</td>
             <td>{{rowData.availability}}</td>
         </tr>

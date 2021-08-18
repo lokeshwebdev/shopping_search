@@ -2,6 +2,9 @@
     "data":
     [  
         {  
+
+         
+
             "data":{  
                 "name":"Breakfast",
                 "price":" ",
@@ -50,6 +53,13 @@
                         "price":"$ 17",
                         "availability":"Out of stock"
                     }
+                },
+                {  
+                    "data":{  
+                        "name":"Paneer paratha",
+                        "price":"$ 17",
+                        "availability":"Out of stock"
+                    }
                 }
             ]
         },
@@ -94,9 +104,17 @@
                         "price":"$ 12",
                         "availability":"In Stock "
                     }
-                },{  
+                },
+                {  
                     "data":{  
                         "name":"Veg Wraps",
+                        "price":"$ 15",
+                        "availability":"Out of stock"
+                    }
+                },
+                {  
+                    "data":{  
+                        "name":"Aloo matar roti",
                         "price":"$ 15",
                         "availability":"Out of stock"
                     }
@@ -119,6 +137,7 @@
                     }
                 },
                 {  
+                    
                     "data":{  
                         "name":"Veg biryani recipe (vegetable biryani)",
                         "price":"$ 21",

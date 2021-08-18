@@ -22,6 +22,13 @@ import { InfoComponent } from './info/info.component';
 import {SkeletonModule} from 'primeng/skeleton';
 import { ServiceComponent } from './service/service.component';
 import {TreeTableModule} from 'primeng/treetable';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {InputTextModule} from 'primeng/inputtext';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {ToastModule} from 'primeng/toast';
+import { ContactComponent } from './contact/contact.component';
+import { UXDesigningComponent } from './ux-designing/ux-designing.component';
+import { OurworkComponent } from './ourwork/ourwork.component';
  
 
  
@@ -34,6 +41,9 @@ import {TreeTableModule} from 'primeng/treetable';
     ProductDetailComponent,
     InfoComponent,
     ServiceComponent,
+    ContactComponent,
+    UXDesigningComponent,
+    OurworkComponent,
     
   ],
   imports: [
@@ -49,8 +59,12 @@ import {TreeTableModule} from 'primeng/treetable';
     HttpClientModule,
     DropdownModule,
     TableModule,
-    SkeletonModule,
+    SkeletonModule, 
     TreeTableModule,
+    MultiSelectModule,
+    InputTextModule,
+    ContextMenuModule,
+    ToastModule
   
     
     

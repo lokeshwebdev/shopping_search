@@ -24,6 +24,9 @@ productImg="";
 
 
 
+
+    
+
   constructor(private _productData:ProductService) { 
 
 
@@ -40,7 +43,7 @@ productImg="";
   
     this._productData.getData().subscribe(customers =>{
        this.customers = customers; 
-     console.log(this.customers)
+  console.log(this.customers)
        });
 
     //this._productData.getData().subscribe(data => this.productList = data);
@@ -48,7 +51,7 @@ productImg="";
    this._productData.getData().subscribe((data:any)=>{   
       
         this.products = data; 
-    console.log(this.productList);
+    ///console.log(this.productList);
       
       }) 
 

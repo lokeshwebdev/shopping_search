@@ -48,10 +48,9 @@ import { ProductsService } from '../products.service';
       
   ];
   
-       this._productlist.getData().subscribe(data=>{   
-      
+       this._productlist.getData().subscribe((data:any)=>{        
        
-       setTimeout(()=>{  this.emptyProductList1 = [];  this.allProductList = data;   },3000)      
+       setTimeout(()=>{  this.emptyProductList1 = [];  this.allProductList = data.data;   },3000)      
        
        /*
        this.category=this.allProductList.map((item:any) => item.category)
@@ -81,8 +80,8 @@ import { ProductsService } from '../products.service';
     setTimeout(()=>{
       this.emptyProductList1=[];
       this.notFound='';
-    this._productlist.getData().subscribe(data=>{ 
-    this.allProductList= data;    
+    this._productlist.getData().subscribe((data:any)=>{ 
+    this.allProductList= data.data;    
     this.allProductList=this.allProductList.filter((res:any) =>res.name.toLocaleLowerCase().match(producttitle.value.trim().toLocaleLowerCase()));
     this.loadingProduct=''
     if(this.allProductList.length==0) {
